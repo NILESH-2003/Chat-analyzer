@@ -27,11 +27,6 @@ pip install streamlit pandas matplotlib seaborn wordcloud emoji
 
 Clone the repository:
 
-
-git clone <repository-url>
-
-cd <repository-folder>
-
 Ensure all dependencies are installed.
 
 Run the Streamlit application:

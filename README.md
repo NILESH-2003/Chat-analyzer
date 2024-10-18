@@ -20,7 +20,6 @@ This project provides an in-depth analysis of WhatsApp chat data, enabling users
 - Seaborn
 - WordCloud
 - Emoji
-- Preprocessor (for chat data preprocessing)
 
 You can install the required packages using:
 

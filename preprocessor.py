@@ -2,13 +2,12 @@ import re
 import pandas as pd
 
 def preprocess(data):
-    pattern = '\d{1,2}/\d{1,2}/\d{2,4},\s\d{1,2}:\d{2}\s-\s'
+    pattern = r'\d{1,2}/\d{1,2}/\d{2,4},\s\d{1,2}:\d{2}\s-\s'
 
     messages = re.split(pattern, data)[1:]
     dates = re.findall(pattern, data)
 
     df = pd.DataFrame({'user_message': messages, 'message_date': dates})
-    # convert message_date type
     df['message_date'] = pd.to_datetime(df['message_date'], format='%d/%m/%Y, %H:%M - ')
 
     df.rename(columns={'message_date': 'date'}, inplace=True)
@@ -38,13 +37,13 @@ def preprocess(data):
     df['minute'] = df['date'].dt.minute
 
     period = []
-    for hour in df[['day_name', 'hour']]['hour']:
+    for hour in df['hour']:
         if hour == 23:
-            period.append(str(hour) + "-" + str('00'))
+            period.append(f"{hour}-{0}")
         elif hour == 0:
-            period.append(str('00') + "-" + str(hour + 1))
+            period.append(f"{0}-{1}")
         else:
-            period.append(str(hour) + "-" + str(hour + 1))
+            period.append(f"{hour}-{hour + 1}")
 
     df['period'] = period
 

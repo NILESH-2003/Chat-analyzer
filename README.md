@@ -19,7 +19,6 @@ This project provides an in-depth analysis of WhatsApp chat data, enabling users
 - Matplotlib
 - Seaborn
 - WordCloud
-- TextBlob (for sentiment analysis)
 - Emoji
 - Preprocessor (for chat data preprocessing)
 
@@ -31,17 +30,19 @@ Clone the repository:
 
 
 git clone <repository-url>
+
 cd <repository-folder>
+
 Ensure all dependencies are installed.
 
 Run the Streamlit application:
 
 streamlit run app.py
+
 Upload your WhatsApp chat data (in .txt format) through the sidebar interface.
 
 Explore the different analyses and visualizations provided by the app.
 
-Contributing
 Contributions are welcome! If you have suggestions or improvements, please create a pull request.
 
 License

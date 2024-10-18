@@ -25,8 +25,9 @@ This project provides an in-depth analysis of WhatsApp chat data, enabling users
 
 You can install the required packages using:
 
-```bash
-pip install streamlit pandas matplotlib seaborn wordcloud textblob emoji
+bash
+pip install streamlit pandas matplotlib seaborn wordcloud emoji
+
 Usage
 Clone the repository:
 

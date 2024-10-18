@@ -10,7 +10,7 @@ This project provides an in-depth analysis of WhatsApp chat data, enabling users
 - **Most Busy Users**: Identifies the users who send the most messages.
 - **Word Cloud**: Generates a visual representation of the most frequently used words.
 - **Emoji Analysis**: Analyzes emoji usage in conversations.
-- 
+  
 ## Requirements
 
 - Python 3.7 or higher
